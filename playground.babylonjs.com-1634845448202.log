@@ -1,0 +1,1261 @@
+babylon.js:16 Babylon.js v5.0.0-alpha.50 - WebGL2
+babylon.js:16 BJS - [21:21:49]: Unable to compile effect:
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [21:21:49]: Uniforms:  delta, direction, cameraMinMaxZ, scale, circleOfConfusionSampler, textureSampler
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [21:21:49]: Attributes:  position
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [21:21:49]: Defines:
+#define KERNEL_OFFSET0 -31.43122487
+#define KERNEL_WEIGHT0 0.00096573
+#define KERNEL_OFFSET1 31.43122487
+#define KERNEL_WEIGHT1 0.00096573
+#define KERNEL_OFFSET2 -29.43554136
+#define KERNEL_WEIGHT2 0.00164886
+#define KERNEL_OFFSET3 29.43554136
+#define KERNEL_WEIGHT3 0.00164886
+#define KERNEL_OFFSET4 -27.43986765
+#define KERNEL_WEIGHT4 0.0027182
+#define KERNEL_OFFSET5 27.43986765
+#define KERNEL_WEIGHT5 0.0027182
+#define KERNEL_OFFSET6 -25.44420309
+#define KERNEL_WEIGHT6 0.00432655
+#define KERNEL_OFFSET7 25.44420309
+#define KERNEL_WEIGHT7 0.00432655
+#define KERNEL_OFFSET8 -23.44854704
+#define KERNEL_WEIGHT8 0.00664916
+#define KERNEL_OFFSET9 23.44854704
+#define KERNEL_WEIGHT9 0.00664916
+#define KERNEL_OFFSET10 -21.45289886
+#define KERNEL_WEIGHT10 0.00986638
+#define KERNEL_OFFSET11 21.45289886
+#define KERNEL_WEIGHT11 0.00986638
+#define KERNEL_OFFSET12 -19.45725789
+#define KERNEL_WEIGHT12 0.01413558
+#define KERNEL_OFFSET13 19.45725789
+#define KERNEL_WEIGHT13 0.01413558
+#define KERNEL_OFFSET14 -17.46162348
+#define KERNEL_WEIGHT14 0.01955395
+#define KERNEL_OFFSET15 17.46162348
+#define KERNEL_WEIGHT15 0.01955395
+#define KERNEL_OFFSET16 -15.46599496
+#define KERNEL_WEIGHT16 0.02611683
+#define KERNEL_OFFSET17 15.46599496
+#define KERNEL_WEIGHT17 0.02611683
+#define KERNEL_OFFSET18 -13.47037167
+#define KERNEL_WEIGHT18 0.03367998
+#define KERNEL_OFFSET19 13.47037167
+#define KERNEL_WEIGHT19 0.03367998
+#define KERNEL_OFFSET20 -11.47475294
+#define KERNEL_WEIGHT20 0.04193613
+#define KERNEL_OFFSET21 11.47475294
+#define KERNEL_WEIGHT21 0.04193613
+#define KERNEL_OFFSET22 -9.4791381
+#define KERNEL_WEIGHT22 0.05041622
+#define KERNEL_OFFSET23 9.4791381
+#define KERNEL_WEIGHT23 0.05041622
+#define KERNEL_OFFSET24 -7.48352647
+#define KERNEL_WEIGHT24 0.05852177
+#define KERNEL_OFFSET25 7.48352647
+#define KERNEL_WEIGHT25 0.05852177
+#define KERNEL_OFFSET26 -5.48791739
+#define KERNEL_WEIGHT26 0.06558884
+#define KERNEL_OFFSET27 5.48791739
+#define KERNEL_WEIGHT27 0.06558884
+#define KERNEL_OFFSET28 -3.49231018
+#define KERNEL_WEIGHT28 0.0709754
+#define KERNEL_OFFSET29 3.49231018
+#define KERNEL_WEIGHT29 0.0709754
+#define KERNEL_OFFSET30 -1.49670415
+#define KERNEL_WEIGHT30 0.07415683
+#define KERNEL_DEP_OFFSET0 1.49670415
+#define KERNEL_DEP_WEIGHT0 0.07415683
+#define KERNEL_DEP_OFFSET1 0.
+#define KERNEL_DEP_WEIGHT1 0.0374872
+
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [21:21:49]: Vertex code:
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [21:21:49]: #version 300 es
+#define WEBGL2 
+#define KERNEL_OFFSET0 -31.43122487
+#define KERNEL_WEIGHT0 0.00096573
+#define KERNEL_OFFSET1 31.43122487
+#define KERNEL_WEIGHT1 0.00096573
+#define KERNEL_OFFSET2 -29.43554136
+#define KERNEL_WEIGHT2 0.00164886
+#define KERNEL_OFFSET3 29.43554136
+#define KERNEL_WEIGHT3 0.00164886
+#define KERNEL_OFFSET4 -27.43986765
+#define KERNEL_WEIGHT4 0.0027182
+#define KERNEL_OFFSET5 27.43986765
+#define KERNEL_WEIGHT5 0.0027182
+#define KERNEL_OFFSET6 -25.44420309
+#define KERNEL_WEIGHT6 0.00432655
+#define KERNEL_OFFSET7 25.44420309
+#define KERNEL_WEIGHT7 0.00432655
+#define KERNEL_OFFSET8 -23.44854704
+#define KERNEL_WEIGHT8 0.00664916
+#define KERNEL_OFFSET9 23.44854704
+#define KERNEL_WEIGHT9 0.00664916
+#define KERNEL_OFFSET10 -21.45289886
+#define KERNEL_WEIGHT10 0.00986638
+#define KERNEL_OFFSET11 21.45289886
+#define KERNEL_WEIGHT11 0.00986638
+#define KERNEL_OFFSET12 -19.45725789
+#define KERNEL_WEIGHT12 0.01413558
+#define KERNEL_OFFSET13 19.45725789
+#define KERNEL_WEIGHT13 0.01413558
+#define KERNEL_OFFSET14 -17.46162348
+#define KERNEL_WEIGHT14 0.01955395
+#define KERNEL_OFFSET15 17.46162348
+#define KERNEL_WEIGHT15 0.01955395
+#define KERNEL_OFFSET16 -15.46599496
+#define KERNEL_WEIGHT16 0.02611683
+#define KERNEL_OFFSET17 15.46599496
+#define KERNEL_WEIGHT17 0.02611683
+#define KERNEL_OFFSET18 -13.47037167
+#define KERNEL_WEIGHT18 0.03367998
+#define KERNEL_OFFSET19 13.47037167
+#define KERNEL_WEIGHT19 0.03367998
+#define KERNEL_OFFSET20 -11.47475294
+#define KERNEL_WEIGHT20 0.04193613
+#define KERNEL_OFFSET21 11.47475294
+#define KERNEL_WEIGHT21 0.04193613
+#define KERNEL_OFFSET22 -9.4791381
+#define KERNEL_WEIGHT22 0.05041622
+#define KERNEL_OFFSET23 9.4791381
+#define KERNEL_WEIGHT23 0.05041622
+#define KERNEL_OFFSET24 -7.48352647
+#define KERNEL_WEIGHT24 0.05852177
+#define KERNEL_OFFSET25 7.48352647
+#define KERNEL_WEIGHT25 0.05852177
+#define KERNEL_OFFSET26 -5.48791739
+#define KERNEL_WEIGHT26 0.06558884
+#define KERNEL_OFFSET27 5.48791739
+#define KERNEL_WEIGHT27 0.06558884
+#define KERNEL_OFFSET28 -3.49231018
+#define KERNEL_WEIGHT28 0.0709754
+#define KERNEL_OFFSET29 3.49231018
+#define KERNEL_WEIGHT29 0.0709754
+#define KERNEL_OFFSET30 -1.49670415
+#define KERNEL_WEIGHT30 0.07415683
+#define KERNEL_DEP_OFFSET0 1.49670415
+#define KERNEL_DEP_WEIGHT0 0.07415683
+#define KERNEL_DEP_OFFSET1 0.
+#define KERNEL_DEP_WEIGHT1 0.0374872
+
+#define SHADER_NAME vertex:kernelBlur
+precision highp float;
+in vec2 position;
+uniform vec2 delta;
+out vec2 sampleCenter;
+out vec2 sampleCoord0;
+out vec2 sampleCoord1;
+out vec2 sampleCoord2;
+out vec2 sampleCoord3;
+out vec2 sampleCoord4;
+out vec2 sampleCoord5;
+out vec2 sampleCoord6;
+out vec2 sampleCoord7;
+out vec2 sampleCoord8;
+out vec2 sampleCoord9;
+out vec2 sampleCoord10;
+out vec2 sampleCoord11;
+out vec2 sampleCoord12;
+out vec2 sampleCoord13;
+out vec2 sampleCoord14;
+out vec2 sampleCoord15;
+out vec2 sampleCoord16;
+out vec2 sampleCoord17;
+out vec2 sampleCoord18;
+out vec2 sampleCoord19;
+out vec2 sampleCoord20;
+out vec2 sampleCoord21;
+out vec2 sampleCoord22;
+out vec2 sampleCoord23;
+out vec2 sampleCoord24;
+out vec2 sampleCoord25;
+out vec2 sampleCoord26;
+out vec2 sampleCoord27;
+out vec2 sampleCoord28;
+out vec2 sampleCoord29;
+out vec2 sampleCoord30;
+const vec2 madd=vec2(0.5,0.5);
+void main(void) {
+sampleCenter=(position*madd+madd);
+sampleCoord0=sampleCenter+delta*KERNEL_OFFSET0;
+sampleCoord1=sampleCenter+delta*KERNEL_OFFSET1;
+sampleCoord2=sampleCenter+delta*KERNEL_OFFSET2;
+sampleCoord3=sampleCenter+delta*KERNEL_OFFSET3;
+sampleCoord4=sampleCenter+delta*KERNEL_OFFSET4;
+sampleCoord5=sampleCenter+delta*KERNEL_OFFSET5;
+sampleCoord6=sampleCenter+delta*KERNEL_OFFSET6;
+sampleCoord7=sampleCenter+delta*KERNEL_OFFSET7;
+sampleCoord8=sampleCenter+delta*KERNEL_OFFSET8;
+sampleCoord9=sampleCenter+delta*KERNEL_OFFSET9;
+sampleCoord10=sampleCenter+delta*KERNEL_OFFSET10;
+sampleCoord11=sampleCenter+delta*KERNEL_OFFSET11;
+sampleCoord12=sampleCenter+delta*KERNEL_OFFSET12;
+sampleCoord13=sampleCenter+delta*KERNEL_OFFSET13;
+sampleCoord14=sampleCenter+delta*KERNEL_OFFSET14;
+sampleCoord15=sampleCenter+delta*KERNEL_OFFSET15;
+sampleCoord16=sampleCenter+delta*KERNEL_OFFSET16;
+sampleCoord17=sampleCenter+delta*KERNEL_OFFSET17;
+sampleCoord18=sampleCenter+delta*KERNEL_OFFSET18;
+sampleCoord19=sampleCenter+delta*KERNEL_OFFSET19;
+sampleCoord20=sampleCenter+delta*KERNEL_OFFSET20;
+sampleCoord21=sampleCenter+delta*KERNEL_OFFSET21;
+sampleCoord22=sampleCenter+delta*KERNEL_OFFSET22;
+sampleCoord23=sampleCenter+delta*KERNEL_OFFSET23;
+sampleCoord24=sampleCenter+delta*KERNEL_OFFSET24;
+sampleCoord25=sampleCenter+delta*KERNEL_OFFSET25;
+sampleCoord26=sampleCenter+delta*KERNEL_OFFSET26;
+sampleCoord27=sampleCenter+delta*KERNEL_OFFSET27;
+sampleCoord28=sampleCenter+delta*KERNEL_OFFSET28;
+sampleCoord29=sampleCenter+delta*KERNEL_OFFSET29;
+sampleCoord30=sampleCenter+delta*KERNEL_OFFSET30;
+gl_Position=vec4(position,0.0,1.0);
+}
+
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [21:21:49]: Fragment code:
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [21:21:49]: #version 300 es
+#define WEBGL2 
+#define KERNEL_OFFSET0 -31.43122487
+#define KERNEL_WEIGHT0 0.00096573
+#define KERNEL_OFFSET1 31.43122487
+#define KERNEL_WEIGHT1 0.00096573
+#define KERNEL_OFFSET2 -29.43554136
+#define KERNEL_WEIGHT2 0.00164886
+#define KERNEL_OFFSET3 29.43554136
+#define KERNEL_WEIGHT3 0.00164886
+#define KERNEL_OFFSET4 -27.43986765
+#define KERNEL_WEIGHT4 0.0027182
+#define KERNEL_OFFSET5 27.43986765
+#define KERNEL_WEIGHT5 0.0027182
+#define KERNEL_OFFSET6 -25.44420309
+#define KERNEL_WEIGHT6 0.00432655
+#define KERNEL_OFFSET7 25.44420309
+#define KERNEL_WEIGHT7 0.00432655
+#define KERNEL_OFFSET8 -23.44854704
+#define KERNEL_WEIGHT8 0.00664916
+#define KERNEL_OFFSET9 23.44854704
+#define KERNEL_WEIGHT9 0.00664916
+#define KERNEL_OFFSET10 -21.45289886
+#define KERNEL_WEIGHT10 0.00986638
+#define KERNEL_OFFSET11 21.45289886
+#define KERNEL_WEIGHT11 0.00986638
+#define KERNEL_OFFSET12 -19.45725789
+#define KERNEL_WEIGHT12 0.01413558
+#define KERNEL_OFFSET13 19.45725789
+#define KERNEL_WEIGHT13 0.01413558
+#define KERNEL_OFFSET14 -17.46162348
+#define KERNEL_WEIGHT14 0.01955395
+#define KERNEL_OFFSET15 17.46162348
+#define KERNEL_WEIGHT15 0.01955395
+#define KERNEL_OFFSET16 -15.46599496
+#define KERNEL_WEIGHT16 0.02611683
+#define KERNEL_OFFSET17 15.46599496
+#define KERNEL_WEIGHT17 0.02611683
+#define KERNEL_OFFSET18 -13.47037167
+#define KERNEL_WEIGHT18 0.03367998
+#define KERNEL_OFFSET19 13.47037167
+#define KERNEL_WEIGHT19 0.03367998
+#define KERNEL_OFFSET20 -11.47475294
+#define KERNEL_WEIGHT20 0.04193613
+#define KERNEL_OFFSET21 11.47475294
+#define KERNEL_WEIGHT21 0.04193613
+#define KERNEL_OFFSET22 -9.4791381
+#define KERNEL_WEIGHT22 0.05041622
+#define KERNEL_OFFSET23 9.4791381
+#define KERNEL_WEIGHT23 0.05041622
+#define KERNEL_OFFSET24 -7.48352647
+#define KERNEL_WEIGHT24 0.05852177
+#define KERNEL_OFFSET25 7.48352647
+#define KERNEL_WEIGHT25 0.05852177
+#define KERNEL_OFFSET26 -5.48791739
+#define KERNEL_WEIGHT26 0.06558884
+#define KERNEL_OFFSET27 5.48791739
+#define KERNEL_WEIGHT27 0.06558884
+#define KERNEL_OFFSET28 -3.49231018
+#define KERNEL_WEIGHT28 0.0709754
+#define KERNEL_OFFSET29 3.49231018
+#define KERNEL_WEIGHT29 0.0709754
+#define KERNEL_OFFSET30 -1.49670415
+#define KERNEL_WEIGHT30 0.07415683
+#define KERNEL_DEP_OFFSET0 1.49670415
+#define KERNEL_DEP_WEIGHT0 0.07415683
+#define KERNEL_DEP_OFFSET1 0.
+#define KERNEL_DEP_WEIGHT1 0.0374872
+
+#define SHADER_NAME fragment:kernelBlur
+precision highp float;
+uniform sampler2D textureSampler;
+uniform vec2 delta;
+in vec2 sampleCenter;
+in vec2 sampleCoord0;
+in vec2 sampleCoord1;
+in vec2 sampleCoord2;
+in vec2 sampleCoord3;
+in vec2 sampleCoord4;
+in vec2 sampleCoord5;
+in vec2 sampleCoord6;
+in vec2 sampleCoord7;
+in vec2 sampleCoord8;
+in vec2 sampleCoord9;
+in vec2 sampleCoord10;
+in vec2 sampleCoord11;
+in vec2 sampleCoord12;
+in vec2 sampleCoord13;
+in vec2 sampleCoord14;
+in vec2 sampleCoord15;
+in vec2 sampleCoord16;
+in vec2 sampleCoord17;
+in vec2 sampleCoord18;
+in vec2 sampleCoord19;
+in vec2 sampleCoord20;
+in vec2 sampleCoord21;
+in vec2 sampleCoord22;
+in vec2 sampleCoord23;
+in vec2 sampleCoord24;
+in vec2 sampleCoord25;
+in vec2 sampleCoord26;
+in vec2 sampleCoord27;
+in vec2 sampleCoord28;
+in vec2 sampleCoord29;
+in vec2 sampleCoord30;
+out vec4 glFragColor;
+void main(void)
+{
+float computedWeight=0.0;
+vec4 blend=vec4(0.);
+computedWeight=KERNEL_WEIGHT0;
+blend+=texture(textureSampler,sampleCoord0)*computedWeight;
+computedWeight=KERNEL_WEIGHT1;
+blend+=texture(textureSampler,sampleCoord1)*computedWeight;
+computedWeight=KERNEL_WEIGHT2;
+blend+=texture(textureSampler,sampleCoord2)*computedWeight;
+computedWeight=KERNEL_WEIGHT3;
+blend+=texture(textureSampler,sampleCoord3)*computedWeight;
+computedWeight=KERNEL_WEIGHT4;
+blend+=texture(textureSampler,sampleCoord4)*computedWeight;
+computedWeight=KERNEL_WEIGHT5;
+blend+=texture(textureSampler,sampleCoord5)*computedWeight;
+computedWeight=KERNEL_WEIGHT6;
+blend+=texture(textureSampler,sampleCoord6)*computedWeight;
+computedWeight=KERNEL_WEIGHT7;
+blend+=texture(textureSampler,sampleCoord7)*computedWeight;
+computedWeight=KERNEL_WEIGHT8;
+blend+=texture(textureSampler,sampleCoord8)*computedWeight;
+computedWeight=KERNEL_WEIGHT9;
+blend+=texture(textureSampler,sampleCoord9)*computedWeight;
+computedWeight=KERNEL_WEIGHT10;
+blend+=texture(textureSampler,sampleCoord10)*computedWeight;
+computedWeight=KERNEL_WEIGHT11;
+blend+=texture(textureSampler,sampleCoord11)*computedWeight;
+computedWeight=KERNEL_WEIGHT12;
+blend+=texture(textureSampler,sampleCoord12)*computedWeight;
+computedWeight=KERNEL_WEIGHT13;
+blend+=texture(textureSampler,sampleCoord13)*computedWeight;
+computedWeight=KERNEL_WEIGHT14;
+blend+=texture(textureSampler,sampleCoord14)*computedWeight;
+computedWeight=KERNEL_WEIGHT15;
+blend+=texture(textureSampler,sampleCoord15)*computedWeight;
+computedWeight=KERNEL_WEIGHT16;
+blend+=texture(textureSampler,sampleCoord16)*computedWeight;
+computedWeight=KERNEL_WEIGHT17;
+blend+=texture(textureSampler,sampleCoord17)*computedWeight;
+computedWeight=KERNEL_WEIGHT18;
+blend+=texture(textureSampler,sampleCoord18)*computedWeight;
+computedWeight=KERNEL_WEIGHT19;
+blend+=texture(textureSampler,sampleCoord19)*computedWeight;
+computedWeight=KERNEL_WEIGHT20;
+blend+=texture(textureSampler,sampleCoord20)*computedWeight;
+computedWeight=KERNEL_WEIGHT21;
+blend+=texture(textureSampler,sampleCoord21)*computedWeight;
+computedWeight=KERNEL_WEIGHT22;
+blend+=texture(textureSampler,sampleCoord22)*computedWeight;
+computedWeight=KERNEL_WEIGHT23;
+blend+=texture(textureSampler,sampleCoord23)*computedWeight;
+computedWeight=KERNEL_WEIGHT24;
+blend+=texture(textureSampler,sampleCoord24)*computedWeight;
+computedWeight=KERNEL_WEIGHT25;
+blend+=texture(textureSampler,sampleCoord25)*computedWeight;
+computedWeight=KERNEL_WEIGHT26;
+blend+=texture(textureSampler,sampleCoord26)*computedWeight;
+computedWeight=KERNEL_WEIGHT27;
+blend+=texture(textureSampler,sampleCoord27)*computedWeight;
+computedWeight=KERNEL_WEIGHT28;
+blend+=texture(textureSampler,sampleCoord28)*computedWeight;
+computedWeight=KERNEL_WEIGHT29;
+blend+=texture(textureSampler,sampleCoord29)*computedWeight;
+computedWeight=KERNEL_WEIGHT30;
+blend+=texture(textureSampler,sampleCoord30)*computedWeight;
+computedWeight=KERNEL_DEP_WEIGHT0;
+blend+=texture(textureSampler,sampleCenter+delta*KERNEL_DEP_OFFSET0)*computedWeight;
+computedWeight=KERNEL_DEP_WEIGHT1;
+blend+=texture(textureSampler,sampleCenter+delta*KERNEL_DEP_OFFSET1)*computedWeight;
+glFragColor=blend;
+}
+
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [21:21:49]: Error: Too many varyings
+ 
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 WebGL: INVALID_OPERATION: useProgram: program not valid
+e._setProgram @ babylon.js:16
+babylon.js:16 Uncaught TypeError: Cannot read properties of undefined (reading 'scale')
+    at e.setVector2 (babylon.js:16)
+    at e.setVector2 (babylon.js:16)
+    at t.e.apply (babylon.js:16)
+    at e.directRender (babylon.js:16)
+    at r.callback (babylon.js:16)
+    at e.notifyObservers (babylon.js:16)
+    at t.render (babylon.js:16)
+    at t._renderForCamera (babylon.js:16)
+    at t._processSubCameras (babylon.js:16)
+    at t.render (babylon.js:16)
+babylon.js:16 Babylon.js v5.0.0-alpha.50 - WebGL2
+babylon.js:16 Babylon.js v5.0.0-alpha.50 - WebGL2
+babylon.js:16 BJS - [20:36:00]: Unable to compile effect:
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:36:00]: Uniforms:  delta, direction, cameraMinMaxZ, scale, circleOfConfusionSampler, textureSampler
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:36:00]: Attributes:  position
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:36:00]: Defines:
+#define KERNEL_OFFSET0 -31.43122487
+#define KERNEL_WEIGHT0 0.00096573
+#define KERNEL_OFFSET1 31.43122487
+#define KERNEL_WEIGHT1 0.00096573
+#define KERNEL_OFFSET2 -29.43554136
+#define KERNEL_WEIGHT2 0.00164886
+#define KERNEL_OFFSET3 29.43554136
+#define KERNEL_WEIGHT3 0.00164886
+#define KERNEL_OFFSET4 -27.43986765
+#define KERNEL_WEIGHT4 0.0027182
+#define KERNEL_OFFSET5 27.43986765
+#define KERNEL_WEIGHT5 0.0027182
+#define KERNEL_OFFSET6 -25.44420309
+#define KERNEL_WEIGHT6 0.00432655
+#define KERNEL_OFFSET7 25.44420309
+#define KERNEL_WEIGHT7 0.00432655
+#define KERNEL_OFFSET8 -23.44854704
+#define KERNEL_WEIGHT8 0.00664916
+#define KERNEL_OFFSET9 23.44854704
+#define KERNEL_WEIGHT9 0.00664916
+#define KERNEL_OFFSET10 -21.45289886
+#define KERNEL_WEIGHT10 0.00986638
+#define KERNEL_OFFSET11 21.45289886
+#define KERNEL_WEIGHT11 0.00986638
+#define KERNEL_OFFSET12 -19.45725789
+#define KERNEL_WEIGHT12 0.01413558
+#define KERNEL_OFFSET13 19.45725789
+#define KERNEL_WEIGHT13 0.01413558
+#define KERNEL_OFFSET14 -17.46162348
+#define KERNEL_WEIGHT14 0.01955395
+#define KERNEL_OFFSET15 17.46162348
+#define KERNEL_WEIGHT15 0.01955395
+#define KERNEL_OFFSET16 -15.46599496
+#define KERNEL_WEIGHT16 0.02611683
+#define KERNEL_OFFSET17 15.46599496
+#define KERNEL_WEIGHT17 0.02611683
+#define KERNEL_OFFSET18 -13.47037167
+#define KERNEL_WEIGHT18 0.03367998
+#define KERNEL_OFFSET19 13.47037167
+#define KERNEL_WEIGHT19 0.03367998
+#define KERNEL_OFFSET20 -11.47475294
+#define KERNEL_WEIGHT20 0.04193613
+#define KERNEL_OFFSET21 11.47475294
+#define KERNEL_WEIGHT21 0.04193613
+#define KERNEL_OFFSET22 -9.4791381
+#define KERNEL_WEIGHT22 0.05041622
+#define KERNEL_OFFSET23 9.4791381
+#define KERNEL_WEIGHT23 0.05041622
+#define KERNEL_OFFSET24 -7.48352647
+#define KERNEL_WEIGHT24 0.05852177
+#define KERNEL_OFFSET25 7.48352647
+#define KERNEL_WEIGHT25 0.05852177
+#define KERNEL_OFFSET26 -5.48791739
+#define KERNEL_WEIGHT26 0.06558884
+#define KERNEL_OFFSET27 5.48791739
+#define KERNEL_WEIGHT27 0.06558884
+#define KERNEL_OFFSET28 -3.49231018
+#define KERNEL_WEIGHT28 0.0709754
+#define KERNEL_OFFSET29 3.49231018
+#define KERNEL_WEIGHT29 0.0709754
+#define KERNEL_OFFSET30 -1.49670415
+#define KERNEL_WEIGHT30 0.07415683
+#define KERNEL_DEP_OFFSET0 1.49670415
+#define KERNEL_DEP_WEIGHT0 0.07415683
+#define KERNEL_DEP_OFFSET1 0.
+#define KERNEL_DEP_WEIGHT1 0.0374872
+
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:36:00]: Vertex code:
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:36:00]: #version 300 es
+#define WEBGL2 
+#define KERNEL_OFFSET0 -31.43122487
+#define KERNEL_WEIGHT0 0.00096573
+#define KERNEL_OFFSET1 31.43122487
+#define KERNEL_WEIGHT1 0.00096573
+#define KERNEL_OFFSET2 -29.43554136
+#define KERNEL_WEIGHT2 0.00164886
+#define KERNEL_OFFSET3 29.43554136
+#define KERNEL_WEIGHT3 0.00164886
+#define KERNEL_OFFSET4 -27.43986765
+#define KERNEL_WEIGHT4 0.0027182
+#define KERNEL_OFFSET5 27.43986765
+#define KERNEL_WEIGHT5 0.0027182
+#define KERNEL_OFFSET6 -25.44420309
+#define KERNEL_WEIGHT6 0.00432655
+#define KERNEL_OFFSET7 25.44420309
+#define KERNEL_WEIGHT7 0.00432655
+#define KERNEL_OFFSET8 -23.44854704
+#define KERNEL_WEIGHT8 0.00664916
+#define KERNEL_OFFSET9 23.44854704
+#define KERNEL_WEIGHT9 0.00664916
+#define KERNEL_OFFSET10 -21.45289886
+#define KERNEL_WEIGHT10 0.00986638
+#define KERNEL_OFFSET11 21.45289886
+#define KERNEL_WEIGHT11 0.00986638
+#define KERNEL_OFFSET12 -19.45725789
+#define KERNEL_WEIGHT12 0.01413558
+#define KERNEL_OFFSET13 19.45725789
+#define KERNEL_WEIGHT13 0.01413558
+#define KERNEL_OFFSET14 -17.46162348
+#define KERNEL_WEIGHT14 0.01955395
+#define KERNEL_OFFSET15 17.46162348
+#define KERNEL_WEIGHT15 0.01955395
+#define KERNEL_OFFSET16 -15.46599496
+#define KERNEL_WEIGHT16 0.02611683
+#define KERNEL_OFFSET17 15.46599496
+#define KERNEL_WEIGHT17 0.02611683
+#define KERNEL_OFFSET18 -13.47037167
+#define KERNEL_WEIGHT18 0.03367998
+#define KERNEL_OFFSET19 13.47037167
+#define KERNEL_WEIGHT19 0.03367998
+#define KERNEL_OFFSET20 -11.47475294
+#define KERNEL_WEIGHT20 0.04193613
+#define KERNEL_OFFSET21 11.47475294
+#define KERNEL_WEIGHT21 0.04193613
+#define KERNEL_OFFSET22 -9.4791381
+#define KERNEL_WEIGHT22 0.05041622
+#define KERNEL_OFFSET23 9.4791381
+#define KERNEL_WEIGHT23 0.05041622
+#define KERNEL_OFFSET24 -7.48352647
+#define KERNEL_WEIGHT24 0.05852177
+#define KERNEL_OFFSET25 7.48352647
+#define KERNEL_WEIGHT25 0.05852177
+#define KERNEL_OFFSET26 -5.48791739
+#define KERNEL_WEIGHT26 0.06558884
+#define KERNEL_OFFSET27 5.48791739
+#define KERNEL_WEIGHT27 0.06558884
+#define KERNEL_OFFSET28 -3.49231018
+#define KERNEL_WEIGHT28 0.0709754
+#define KERNEL_OFFSET29 3.49231018
+#define KERNEL_WEIGHT29 0.0709754
+#define KERNEL_OFFSET30 -1.49670415
+#define KERNEL_WEIGHT30 0.07415683
+#define KERNEL_DEP_OFFSET0 1.49670415
+#define KERNEL_DEP_WEIGHT0 0.07415683
+#define KERNEL_DEP_OFFSET1 0.
+#define KERNEL_DEP_WEIGHT1 0.0374872
+
+#define SHADER_NAME vertex:kernelBlur
+precision highp float;
+in vec2 position;
+uniform vec2 delta;
+out vec2 sampleCenter;
+out vec2 sampleCoord0;
+out vec2 sampleCoord1;
+out vec2 sampleCoord2;
+out vec2 sampleCoord3;
+out vec2 sampleCoord4;
+out vec2 sampleCoord5;
+out vec2 sampleCoord6;
+out vec2 sampleCoord7;
+out vec2 sampleCoord8;
+out vec2 sampleCoord9;
+out vec2 sampleCoord10;
+out vec2 sampleCoord11;
+out vec2 sampleCoord12;
+out vec2 sampleCoord13;
+out vec2 sampleCoord14;
+out vec2 sampleCoord15;
+out vec2 sampleCoord16;
+out vec2 sampleCoord17;
+out vec2 sampleCoord18;
+out vec2 sampleCoord19;
+out vec2 sampleCoord20;
+out vec2 sampleCoord21;
+out vec2 sampleCoord22;
+out vec2 sampleCoord23;
+out vec2 sampleCoord24;
+out vec2 sampleCoord25;
+out vec2 sampleCoord26;
+out vec2 sampleCoord27;
+out vec2 sampleCoord28;
+out vec2 sampleCoord29;
+out vec2 sampleCoord30;
+const vec2 madd=vec2(0.5,0.5);
+void main(void) {
+sampleCenter=(position*madd+madd);
+sampleCoord0=sampleCenter+delta*KERNEL_OFFSET0;
+sampleCoord1=sampleCenter+delta*KERNEL_OFFSET1;
+sampleCoord2=sampleCenter+delta*KERNEL_OFFSET2;
+sampleCoord3=sampleCenter+delta*KERNEL_OFFSET3;
+sampleCoord4=sampleCenter+delta*KERNEL_OFFSET4;
+sampleCoord5=sampleCenter+delta*KERNEL_OFFSET5;
+sampleCoord6=sampleCenter+delta*KERNEL_OFFSET6;
+sampleCoord7=sampleCenter+delta*KERNEL_OFFSET7;
+sampleCoord8=sampleCenter+delta*KERNEL_OFFSET8;
+sampleCoord9=sampleCenter+delta*KERNEL_OFFSET9;
+sampleCoord10=sampleCenter+delta*KERNEL_OFFSET10;
+sampleCoord11=sampleCenter+delta*KERNEL_OFFSET11;
+sampleCoord12=sampleCenter+delta*KERNEL_OFFSET12;
+sampleCoord13=sampleCenter+delta*KERNEL_OFFSET13;
+sampleCoord14=sampleCenter+delta*KERNEL_OFFSET14;
+sampleCoord15=sampleCenter+delta*KERNEL_OFFSET15;
+sampleCoord16=sampleCenter+delta*KERNEL_OFFSET16;
+sampleCoord17=sampleCenter+delta*KERNEL_OFFSET17;
+sampleCoord18=sampleCenter+delta*KERNEL_OFFSET18;
+sampleCoord19=sampleCenter+delta*KERNEL_OFFSET19;
+sampleCoord20=sampleCenter+delta*KERNEL_OFFSET20;
+sampleCoord21=sampleCenter+delta*KERNEL_OFFSET21;
+sampleCoord22=sampleCenter+delta*KERNEL_OFFSET22;
+sampleCoord23=sampleCenter+delta*KERNEL_OFFSET23;
+sampleCoord24=sampleCenter+delta*KERNEL_OFFSET24;
+sampleCoord25=sampleCenter+delta*KERNEL_OFFSET25;
+sampleCoord26=sampleCenter+delta*KERNEL_OFFSET26;
+sampleCoord27=sampleCenter+delta*KERNEL_OFFSET27;
+sampleCoord28=sampleCenter+delta*KERNEL_OFFSET28;
+sampleCoord29=sampleCenter+delta*KERNEL_OFFSET29;
+sampleCoord30=sampleCenter+delta*KERNEL_OFFSET30;
+gl_Position=vec4(position,0.0,1.0);
+}
+
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:36:00]: Fragment code:
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:36:00]: #version 300 es
+#define WEBGL2 
+#define KERNEL_OFFSET0 -31.43122487
+#define KERNEL_WEIGHT0 0.00096573
+#define KERNEL_OFFSET1 31.43122487
+#define KERNEL_WEIGHT1 0.00096573
+#define KERNEL_OFFSET2 -29.43554136
+#define KERNEL_WEIGHT2 0.00164886
+#define KERNEL_OFFSET3 29.43554136
+#define KERNEL_WEIGHT3 0.00164886
+#define KERNEL_OFFSET4 -27.43986765
+#define KERNEL_WEIGHT4 0.0027182
+#define KERNEL_OFFSET5 27.43986765
+#define KERNEL_WEIGHT5 0.0027182
+#define KERNEL_OFFSET6 -25.44420309
+#define KERNEL_WEIGHT6 0.00432655
+#define KERNEL_OFFSET7 25.44420309
+#define KERNEL_WEIGHT7 0.00432655
+#define KERNEL_OFFSET8 -23.44854704
+#define KERNEL_WEIGHT8 0.00664916
+#define KERNEL_OFFSET9 23.44854704
+#define KERNEL_WEIGHT9 0.00664916
+#define KERNEL_OFFSET10 -21.45289886
+#define KERNEL_WEIGHT10 0.00986638
+#define KERNEL_OFFSET11 21.45289886
+#define KERNEL_WEIGHT11 0.00986638
+#define KERNEL_OFFSET12 -19.45725789
+#define KERNEL_WEIGHT12 0.01413558
+#define KERNEL_OFFSET13 19.45725789
+#define KERNEL_WEIGHT13 0.01413558
+#define KERNEL_OFFSET14 -17.46162348
+#define KERNEL_WEIGHT14 0.01955395
+#define KERNEL_OFFSET15 17.46162348
+#define KERNEL_WEIGHT15 0.01955395
+#define KERNEL_OFFSET16 -15.46599496
+#define KERNEL_WEIGHT16 0.02611683
+#define KERNEL_OFFSET17 15.46599496
+#define KERNEL_WEIGHT17 0.02611683
+#define KERNEL_OFFSET18 -13.47037167
+#define KERNEL_WEIGHT18 0.03367998
+#define KERNEL_OFFSET19 13.47037167
+#define KERNEL_WEIGHT19 0.03367998
+#define KERNEL_OFFSET20 -11.47475294
+#define KERNEL_WEIGHT20 0.04193613
+#define KERNEL_OFFSET21 11.47475294
+#define KERNEL_WEIGHT21 0.04193613
+#define KERNEL_OFFSET22 -9.4791381
+#define KERNEL_WEIGHT22 0.05041622
+#define KERNEL_OFFSET23 9.4791381
+#define KERNEL_WEIGHT23 0.05041622
+#define KERNEL_OFFSET24 -7.48352647
+#define KERNEL_WEIGHT24 0.05852177
+#define KERNEL_OFFSET25 7.48352647
+#define KERNEL_WEIGHT25 0.05852177
+#define KERNEL_OFFSET26 -5.48791739
+#define KERNEL_WEIGHT26 0.06558884
+#define KERNEL_OFFSET27 5.48791739
+#define KERNEL_WEIGHT27 0.06558884
+#define KERNEL_OFFSET28 -3.49231018
+#define KERNEL_WEIGHT28 0.0709754
+#define KERNEL_OFFSET29 3.49231018
+#define KERNEL_WEIGHT29 0.0709754
+#define KERNEL_OFFSET30 -1.49670415
+#define KERNEL_WEIGHT30 0.07415683
+#define KERNEL_DEP_OFFSET0 1.49670415
+#define KERNEL_DEP_WEIGHT0 0.07415683
+#define KERNEL_DEP_OFFSET1 0.
+#define KERNEL_DEP_WEIGHT1 0.0374872
+
+#define SHADER_NAME fragment:kernelBlur
+precision highp float;
+uniform sampler2D textureSampler;
+uniform vec2 delta;
+in vec2 sampleCenter;
+in vec2 sampleCoord0;
+in vec2 sampleCoord1;
+in vec2 sampleCoord2;
+in vec2 sampleCoord3;
+in vec2 sampleCoord4;
+in vec2 sampleCoord5;
+in vec2 sampleCoord6;
+in vec2 sampleCoord7;
+in vec2 sampleCoord8;
+in vec2 sampleCoord9;
+in vec2 sampleCoord10;
+in vec2 sampleCoord11;
+in vec2 sampleCoord12;
+in vec2 sampleCoord13;
+in vec2 sampleCoord14;
+in vec2 sampleCoord15;
+in vec2 sampleCoord16;
+in vec2 sampleCoord17;
+in vec2 sampleCoord18;
+in vec2 sampleCoord19;
+in vec2 sampleCoord20;
+in vec2 sampleCoord21;
+in vec2 sampleCoord22;
+in vec2 sampleCoord23;
+in vec2 sampleCoord24;
+in vec2 sampleCoord25;
+in vec2 sampleCoord26;
+in vec2 sampleCoord27;
+in vec2 sampleCoord28;
+in vec2 sampleCoord29;
+in vec2 sampleCoord30;
+out vec4 glFragColor;
+void main(void)
+{
+float computedWeight=0.0;
+vec4 blend=vec4(0.);
+computedWeight=KERNEL_WEIGHT0;
+blend+=texture(textureSampler,sampleCoord0)*computedWeight;
+computedWeight=KERNEL_WEIGHT1;
+blend+=texture(textureSampler,sampleCoord1)*computedWeight;
+computedWeight=KERNEL_WEIGHT2;
+blend+=texture(textureSampler,sampleCoord2)*computedWeight;
+computedWeight=KERNEL_WEIGHT3;
+blend+=texture(textureSampler,sampleCoord3)*computedWeight;
+computedWeight=KERNEL_WEIGHT4;
+blend+=texture(textureSampler,sampleCoord4)*computedWeight;
+computedWeight=KERNEL_WEIGHT5;
+blend+=texture(textureSampler,sampleCoord5)*computedWeight;
+computedWeight=KERNEL_WEIGHT6;
+blend+=texture(textureSampler,sampleCoord6)*computedWeight;
+computedWeight=KERNEL_WEIGHT7;
+blend+=texture(textureSampler,sampleCoord7)*computedWeight;
+computedWeight=KERNEL_WEIGHT8;
+blend+=texture(textureSampler,sampleCoord8)*computedWeight;
+computedWeight=KERNEL_WEIGHT9;
+blend+=texture(textureSampler,sampleCoord9)*computedWeight;
+computedWeight=KERNEL_WEIGHT10;
+blend+=texture(textureSampler,sampleCoord10)*computedWeight;
+computedWeight=KERNEL_WEIGHT11;
+blend+=texture(textureSampler,sampleCoord11)*computedWeight;
+computedWeight=KERNEL_WEIGHT12;
+blend+=texture(textureSampler,sampleCoord12)*computedWeight;
+computedWeight=KERNEL_WEIGHT13;
+blend+=texture(textureSampler,sampleCoord13)*computedWeight;
+computedWeight=KERNEL_WEIGHT14;
+blend+=texture(textureSampler,sampleCoord14)*computedWeight;
+computedWeight=KERNEL_WEIGHT15;
+blend+=texture(textureSampler,sampleCoord15)*computedWeight;
+computedWeight=KERNEL_WEIGHT16;
+blend+=texture(textureSampler,sampleCoord16)*computedWeight;
+computedWeight=KERNEL_WEIGHT17;
+blend+=texture(textureSampler,sampleCoord17)*computedWeight;
+computedWeight=KERNEL_WEIGHT18;
+blend+=texture(textureSampler,sampleCoord18)*computedWeight;
+computedWeight=KERNEL_WEIGHT19;
+blend+=texture(textureSampler,sampleCoord19)*computedWeight;
+computedWeight=KERNEL_WEIGHT20;
+blend+=texture(textureSampler,sampleCoord20)*computedWeight;
+computedWeight=KERNEL_WEIGHT21;
+blend+=texture(textureSampler,sampleCoord21)*computedWeight;
+computedWeight=KERNEL_WEIGHT22;
+blend+=texture(textureSampler,sampleCoord22)*computedWeight;
+computedWeight=KERNEL_WEIGHT23;
+blend+=texture(textureSampler,sampleCoord23)*computedWeight;
+computedWeight=KERNEL_WEIGHT24;
+blend+=texture(textureSampler,sampleCoord24)*computedWeight;
+computedWeight=KERNEL_WEIGHT25;
+blend+=texture(textureSampler,sampleCoord25)*computedWeight;
+computedWeight=KERNEL_WEIGHT26;
+blend+=texture(textureSampler,sampleCoord26)*computedWeight;
+computedWeight=KERNEL_WEIGHT27;
+blend+=texture(textureSampler,sampleCoord27)*computedWeight;
+computedWeight=KERNEL_WEIGHT28;
+blend+=texture(textureSampler,sampleCoord28)*computedWeight;
+computedWeight=KERNEL_WEIGHT29;
+blend+=texture(textureSampler,sampleCoord29)*computedWeight;
+computedWeight=KERNEL_WEIGHT30;
+blend+=texture(textureSampler,sampleCoord30)*computedWeight;
+computedWeight=KERNEL_DEP_WEIGHT0;
+blend+=texture(textureSampler,sampleCenter+delta*KERNEL_DEP_OFFSET0)*computedWeight;
+computedWeight=KERNEL_DEP_WEIGHT1;
+blend+=texture(textureSampler,sampleCenter+delta*KERNEL_DEP_OFFSET1)*computedWeight;
+glFragColor=blend;
+}
+
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:36:00]: Error: Too many varyings
+ 
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 WebGL: INVALID_OPERATION: useProgram: program not valid
+e._setProgram @ babylon.js:16
+babylon.js:16 Uncaught TypeError: Cannot read properties of undefined (reading 'scale')
+    at e.setVector2 (babylon.js:16)
+    at e.setVector2 (babylon.js:16)
+    at t.e.apply (babylon.js:16)
+    at e.directRender (babylon.js:16)
+    at r.callback (babylon.js:16)
+    at e.notifyObservers (babylon.js:16)
+    at t.render (babylon.js:16)
+    at t._renderForCamera (babylon.js:16)
+    at t._processSubCameras (babylon.js:16)
+    at t.render (babylon.js:16)
+babylon.js:16 Babylon.js v5.0.0-alpha.50 - WebGL2
+babylon.js:16 Babylon.js v5.0.0-alpha.50 - WebGL2
+babylon.js:16 BJS - [20:37:01]: Unable to compile effect:
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:37:01]: Uniforms:  delta, direction, cameraMinMaxZ, scale, circleOfConfusionSampler, textureSampler
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:37:01]: Attributes:  position
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:37:01]: Defines:
+#define KERNEL_OFFSET0 -31.43122487
+#define KERNEL_WEIGHT0 0.00096573
+#define KERNEL_OFFSET1 31.43122487
+#define KERNEL_WEIGHT1 0.00096573
+#define KERNEL_OFFSET2 -29.43554136
+#define KERNEL_WEIGHT2 0.00164886
+#define KERNEL_OFFSET3 29.43554136
+#define KERNEL_WEIGHT3 0.00164886
+#define KERNEL_OFFSET4 -27.43986765
+#define KERNEL_WEIGHT4 0.0027182
+#define KERNEL_OFFSET5 27.43986765
+#define KERNEL_WEIGHT5 0.0027182
+#define KERNEL_OFFSET6 -25.44420309
+#define KERNEL_WEIGHT6 0.00432655
+#define KERNEL_OFFSET7 25.44420309
+#define KERNEL_WEIGHT7 0.00432655
+#define KERNEL_OFFSET8 -23.44854704
+#define KERNEL_WEIGHT8 0.00664916
+#define KERNEL_OFFSET9 23.44854704
+#define KERNEL_WEIGHT9 0.00664916
+#define KERNEL_OFFSET10 -21.45289886
+#define KERNEL_WEIGHT10 0.00986638
+#define KERNEL_OFFSET11 21.45289886
+#define KERNEL_WEIGHT11 0.00986638
+#define KERNEL_OFFSET12 -19.45725789
+#define KERNEL_WEIGHT12 0.01413558
+#define KERNEL_OFFSET13 19.45725789
+#define KERNEL_WEIGHT13 0.01413558
+#define KERNEL_OFFSET14 -17.46162348
+#define KERNEL_WEIGHT14 0.01955395
+#define KERNEL_OFFSET15 17.46162348
+#define KERNEL_WEIGHT15 0.01955395
+#define KERNEL_OFFSET16 -15.46599496
+#define KERNEL_WEIGHT16 0.02611683
+#define KERNEL_OFFSET17 15.46599496
+#define KERNEL_WEIGHT17 0.02611683
+#define KERNEL_OFFSET18 -13.47037167
+#define KERNEL_WEIGHT18 0.03367998
+#define KERNEL_OFFSET19 13.47037167
+#define KERNEL_WEIGHT19 0.03367998
+#define KERNEL_OFFSET20 -11.47475294
+#define KERNEL_WEIGHT20 0.04193613
+#define KERNEL_OFFSET21 11.47475294
+#define KERNEL_WEIGHT21 0.04193613
+#define KERNEL_OFFSET22 -9.4791381
+#define KERNEL_WEIGHT22 0.05041622
+#define KERNEL_OFFSET23 9.4791381
+#define KERNEL_WEIGHT23 0.05041622
+#define KERNEL_OFFSET24 -7.48352647
+#define KERNEL_WEIGHT24 0.05852177
+#define KERNEL_OFFSET25 7.48352647
+#define KERNEL_WEIGHT25 0.05852177
+#define KERNEL_OFFSET26 -5.48791739
+#define KERNEL_WEIGHT26 0.06558884
+#define KERNEL_OFFSET27 5.48791739
+#define KERNEL_WEIGHT27 0.06558884
+#define KERNEL_OFFSET28 -3.49231018
+#define KERNEL_WEIGHT28 0.0709754
+#define KERNEL_OFFSET29 3.49231018
+#define KERNEL_WEIGHT29 0.0709754
+#define KERNEL_OFFSET30 -1.49670415
+#define KERNEL_WEIGHT30 0.07415683
+#define KERNEL_DEP_OFFSET0 1.49670415
+#define KERNEL_DEP_WEIGHT0 0.07415683
+#define KERNEL_DEP_OFFSET1 0.
+#define KERNEL_DEP_WEIGHT1 0.0374872
+
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:37:01]: Vertex code:
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:37:01]: #version 300 es
+#define WEBGL2 
+#define KERNEL_OFFSET0 -31.43122487
+#define KERNEL_WEIGHT0 0.00096573
+#define KERNEL_OFFSET1 31.43122487
+#define KERNEL_WEIGHT1 0.00096573
+#define KERNEL_OFFSET2 -29.43554136
+#define KERNEL_WEIGHT2 0.00164886
+#define KERNEL_OFFSET3 29.43554136
+#define KERNEL_WEIGHT3 0.00164886
+#define KERNEL_OFFSET4 -27.43986765
+#define KERNEL_WEIGHT4 0.0027182
+#define KERNEL_OFFSET5 27.43986765
+#define KERNEL_WEIGHT5 0.0027182
+#define KERNEL_OFFSET6 -25.44420309
+#define KERNEL_WEIGHT6 0.00432655
+#define KERNEL_OFFSET7 25.44420309
+#define KERNEL_WEIGHT7 0.00432655
+#define KERNEL_OFFSET8 -23.44854704
+#define KERNEL_WEIGHT8 0.00664916
+#define KERNEL_OFFSET9 23.44854704
+#define KERNEL_WEIGHT9 0.00664916
+#define KERNEL_OFFSET10 -21.45289886
+#define KERNEL_WEIGHT10 0.00986638
+#define KERNEL_OFFSET11 21.45289886
+#define KERNEL_WEIGHT11 0.00986638
+#define KERNEL_OFFSET12 -19.45725789
+#define KERNEL_WEIGHT12 0.01413558
+#define KERNEL_OFFSET13 19.45725789
+#define KERNEL_WEIGHT13 0.01413558
+#define KERNEL_OFFSET14 -17.46162348
+#define KERNEL_WEIGHT14 0.01955395
+#define KERNEL_OFFSET15 17.46162348
+#define KERNEL_WEIGHT15 0.01955395
+#define KERNEL_OFFSET16 -15.46599496
+#define KERNEL_WEIGHT16 0.02611683
+#define KERNEL_OFFSET17 15.46599496
+#define KERNEL_WEIGHT17 0.02611683
+#define KERNEL_OFFSET18 -13.47037167
+#define KERNEL_WEIGHT18 0.03367998
+#define KERNEL_OFFSET19 13.47037167
+#define KERNEL_WEIGHT19 0.03367998
+#define KERNEL_OFFSET20 -11.47475294
+#define KERNEL_WEIGHT20 0.04193613
+#define KERNEL_OFFSET21 11.47475294
+#define KERNEL_WEIGHT21 0.04193613
+#define KERNEL_OFFSET22 -9.4791381
+#define KERNEL_WEIGHT22 0.05041622
+#define KERNEL_OFFSET23 9.4791381
+#define KERNEL_WEIGHT23 0.05041622
+#define KERNEL_OFFSET24 -7.48352647
+#define KERNEL_WEIGHT24 0.05852177
+#define KERNEL_OFFSET25 7.48352647
+#define KERNEL_WEIGHT25 0.05852177
+#define KERNEL_OFFSET26 -5.48791739
+#define KERNEL_WEIGHT26 0.06558884
+#define KERNEL_OFFSET27 5.48791739
+#define KERNEL_WEIGHT27 0.06558884
+#define KERNEL_OFFSET28 -3.49231018
+#define KERNEL_WEIGHT28 0.0709754
+#define KERNEL_OFFSET29 3.49231018
+#define KERNEL_WEIGHT29 0.0709754
+#define KERNEL_OFFSET30 -1.49670415
+#define KERNEL_WEIGHT30 0.07415683
+#define KERNEL_DEP_OFFSET0 1.49670415
+#define KERNEL_DEP_WEIGHT0 0.07415683
+#define KERNEL_DEP_OFFSET1 0.
+#define KERNEL_DEP_WEIGHT1 0.0374872
+
+#define SHADER_NAME vertex:kernelBlur
+precision highp float;
+in vec2 position;
+uniform vec2 delta;
+out vec2 sampleCenter;
+out vec2 sampleCoord0;
+out vec2 sampleCoord1;
+out vec2 sampleCoord2;
+out vec2 sampleCoord3;
+out vec2 sampleCoord4;
+out vec2 sampleCoord5;
+out vec2 sampleCoord6;
+out vec2 sampleCoord7;
+out vec2 sampleCoord8;
+out vec2 sampleCoord9;
+out vec2 sampleCoord10;
+out vec2 sampleCoord11;
+out vec2 sampleCoord12;
+out vec2 sampleCoord13;
+out vec2 sampleCoord14;
+out vec2 sampleCoord15;
+out vec2 sampleCoord16;
+out vec2 sampleCoord17;
+out vec2 sampleCoord18;
+out vec2 sampleCoord19;
+out vec2 sampleCoord20;
+out vec2 sampleCoord21;
+out vec2 sampleCoord22;
+out vec2 sampleCoord23;
+out vec2 sampleCoord24;
+out vec2 sampleCoord25;
+out vec2 sampleCoord26;
+out vec2 sampleCoord27;
+out vec2 sampleCoord28;
+out vec2 sampleCoord29;
+out vec2 sampleCoord30;
+const vec2 madd=vec2(0.5,0.5);
+void main(void) {
+sampleCenter=(position*madd+madd);
+sampleCoord0=sampleCenter+delta*KERNEL_OFFSET0;
+sampleCoord1=sampleCenter+delta*KERNEL_OFFSET1;
+sampleCoord2=sampleCenter+delta*KERNEL_OFFSET2;
+sampleCoord3=sampleCenter+delta*KERNEL_OFFSET3;
+sampleCoord4=sampleCenter+delta*KERNEL_OFFSET4;
+sampleCoord5=sampleCenter+delta*KERNEL_OFFSET5;
+sampleCoord6=sampleCenter+delta*KERNEL_OFFSET6;
+sampleCoord7=sampleCenter+delta*KERNEL_OFFSET7;
+sampleCoord8=sampleCenter+delta*KERNEL_OFFSET8;
+sampleCoord9=sampleCenter+delta*KERNEL_OFFSET9;
+sampleCoord10=sampleCenter+delta*KERNEL_OFFSET10;
+sampleCoord11=sampleCenter+delta*KERNEL_OFFSET11;
+sampleCoord12=sampleCenter+delta*KERNEL_OFFSET12;
+sampleCoord13=sampleCenter+delta*KERNEL_OFFSET13;
+sampleCoord14=sampleCenter+delta*KERNEL_OFFSET14;
+sampleCoord15=sampleCenter+delta*KERNEL_OFFSET15;
+sampleCoord16=sampleCenter+delta*KERNEL_OFFSET16;
+sampleCoord17=sampleCenter+delta*KERNEL_OFFSET17;
+sampleCoord18=sampleCenter+delta*KERNEL_OFFSET18;
+sampleCoord19=sampleCenter+delta*KERNEL_OFFSET19;
+sampleCoord20=sampleCenter+delta*KERNEL_OFFSET20;
+sampleCoord21=sampleCenter+delta*KERNEL_OFFSET21;
+sampleCoord22=sampleCenter+delta*KERNEL_OFFSET22;
+sampleCoord23=sampleCenter+delta*KERNEL_OFFSET23;
+sampleCoord24=sampleCenter+delta*KERNEL_OFFSET24;
+sampleCoord25=sampleCenter+delta*KERNEL_OFFSET25;
+sampleCoord26=sampleCenter+delta*KERNEL_OFFSET26;
+sampleCoord27=sampleCenter+delta*KERNEL_OFFSET27;
+sampleCoord28=sampleCenter+delta*KERNEL_OFFSET28;
+sampleCoord29=sampleCenter+delta*KERNEL_OFFSET29;
+sampleCoord30=sampleCenter+delta*KERNEL_OFFSET30;
+gl_Position=vec4(position,0.0,1.0);
+}
+
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:37:01]: Fragment code:
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:37:01]: #version 300 es
+#define WEBGL2 
+#define KERNEL_OFFSET0 -31.43122487
+#define KERNEL_WEIGHT0 0.00096573
+#define KERNEL_OFFSET1 31.43122487
+#define KERNEL_WEIGHT1 0.00096573
+#define KERNEL_OFFSET2 -29.43554136
+#define KERNEL_WEIGHT2 0.00164886
+#define KERNEL_OFFSET3 29.43554136
+#define KERNEL_WEIGHT3 0.00164886
+#define KERNEL_OFFSET4 -27.43986765
+#define KERNEL_WEIGHT4 0.0027182
+#define KERNEL_OFFSET5 27.43986765
+#define KERNEL_WEIGHT5 0.0027182
+#define KERNEL_OFFSET6 -25.44420309
+#define KERNEL_WEIGHT6 0.00432655
+#define KERNEL_OFFSET7 25.44420309
+#define KERNEL_WEIGHT7 0.00432655
+#define KERNEL_OFFSET8 -23.44854704
+#define KERNEL_WEIGHT8 0.00664916
+#define KERNEL_OFFSET9 23.44854704
+#define KERNEL_WEIGHT9 0.00664916
+#define KERNEL_OFFSET10 -21.45289886
+#define KERNEL_WEIGHT10 0.00986638
+#define KERNEL_OFFSET11 21.45289886
+#define KERNEL_WEIGHT11 0.00986638
+#define KERNEL_OFFSET12 -19.45725789
+#define KERNEL_WEIGHT12 0.01413558
+#define KERNEL_OFFSET13 19.45725789
+#define KERNEL_WEIGHT13 0.01413558
+#define KERNEL_OFFSET14 -17.46162348
+#define KERNEL_WEIGHT14 0.01955395
+#define KERNEL_OFFSET15 17.46162348
+#define KERNEL_WEIGHT15 0.01955395
+#define KERNEL_OFFSET16 -15.46599496
+#define KERNEL_WEIGHT16 0.02611683
+#define KERNEL_OFFSET17 15.46599496
+#define KERNEL_WEIGHT17 0.02611683
+#define KERNEL_OFFSET18 -13.47037167
+#define KERNEL_WEIGHT18 0.03367998
+#define KERNEL_OFFSET19 13.47037167
+#define KERNEL_WEIGHT19 0.03367998
+#define KERNEL_OFFSET20 -11.47475294
+#define KERNEL_WEIGHT20 0.04193613
+#define KERNEL_OFFSET21 11.47475294
+#define KERNEL_WEIGHT21 0.04193613
+#define KERNEL_OFFSET22 -9.4791381
+#define KERNEL_WEIGHT22 0.05041622
+#define KERNEL_OFFSET23 9.4791381
+#define KERNEL_WEIGHT23 0.05041622
+#define KERNEL_OFFSET24 -7.48352647
+#define KERNEL_WEIGHT24 0.05852177
+#define KERNEL_OFFSET25 7.48352647
+#define KERNEL_WEIGHT25 0.05852177
+#define KERNEL_OFFSET26 -5.48791739
+#define KERNEL_WEIGHT26 0.06558884
+#define KERNEL_OFFSET27 5.48791739
+#define KERNEL_WEIGHT27 0.06558884
+#define KERNEL_OFFSET28 -3.49231018
+#define KERNEL_WEIGHT28 0.0709754
+#define KERNEL_OFFSET29 3.49231018
+#define KERNEL_WEIGHT29 0.0709754
+#define KERNEL_OFFSET30 -1.49670415
+#define KERNEL_WEIGHT30 0.07415683
+#define KERNEL_DEP_OFFSET0 1.49670415
+#define KERNEL_DEP_WEIGHT0 0.07415683
+#define KERNEL_DEP_OFFSET1 0.
+#define KERNEL_DEP_WEIGHT1 0.0374872
+
+#define SHADER_NAME fragment:kernelBlur
+precision highp float;
+uniform sampler2D textureSampler;
+uniform vec2 delta;
+in vec2 sampleCenter;
+in vec2 sampleCoord0;
+in vec2 sampleCoord1;
+in vec2 sampleCoord2;
+in vec2 sampleCoord3;
+in vec2 sampleCoord4;
+in vec2 sampleCoord5;
+in vec2 sampleCoord6;
+in vec2 sampleCoord7;
+in vec2 sampleCoord8;
+in vec2 sampleCoord9;
+in vec2 sampleCoord10;
+in vec2 sampleCoord11;
+in vec2 sampleCoord12;
+in vec2 sampleCoord13;
+in vec2 sampleCoord14;
+in vec2 sampleCoord15;
+in vec2 sampleCoord16;
+in vec2 sampleCoord17;
+in vec2 sampleCoord18;
+in vec2 sampleCoord19;
+in vec2 sampleCoord20;
+in vec2 sampleCoord21;
+in vec2 sampleCoord22;
+in vec2 sampleCoord23;
+in vec2 sampleCoord24;
+in vec2 sampleCoord25;
+in vec2 sampleCoord26;
+in vec2 sampleCoord27;
+in vec2 sampleCoord28;
+in vec2 sampleCoord29;
+in vec2 sampleCoord30;
+out vec4 glFragColor;
+void main(void)
+{
+float computedWeight=0.0;
+vec4 blend=vec4(0.);
+computedWeight=KERNEL_WEIGHT0;
+blend+=texture(textureSampler,sampleCoord0)*computedWeight;
+computedWeight=KERNEL_WEIGHT1;
+blend+=texture(textureSampler,sampleCoord1)*computedWeight;
+computedWeight=KERNEL_WEIGHT2;
+blend+=texture(textureSampler,sampleCoord2)*computedWeight;
+computedWeight=KERNEL_WEIGHT3;
+blend+=texture(textureSampler,sampleCoord3)*computedWeight;
+computedWeight=KERNEL_WEIGHT4;
+blend+=texture(textureSampler,sampleCoord4)*computedWeight;
+computedWeight=KERNEL_WEIGHT5;
+blend+=texture(textureSampler,sampleCoord5)*computedWeight;
+computedWeight=KERNEL_WEIGHT6;
+blend+=texture(textureSampler,sampleCoord6)*computedWeight;
+computedWeight=KERNEL_WEIGHT7;
+blend+=texture(textureSampler,sampleCoord7)*computedWeight;
+computedWeight=KERNEL_WEIGHT8;
+blend+=texture(textureSampler,sampleCoord8)*computedWeight;
+computedWeight=KERNEL_WEIGHT9;
+blend+=texture(textureSampler,sampleCoord9)*computedWeight;
+computedWeight=KERNEL_WEIGHT10;
+blend+=texture(textureSampler,sampleCoord10)*computedWeight;
+computedWeight=KERNEL_WEIGHT11;
+blend+=texture(textureSampler,sampleCoord11)*computedWeight;
+computedWeight=KERNEL_WEIGHT12;
+blend+=texture(textureSampler,sampleCoord12)*computedWeight;
+computedWeight=KERNEL_WEIGHT13;
+blend+=texture(textureSampler,sampleCoord13)*computedWeight;
+computedWeight=KERNEL_WEIGHT14;
+blend+=texture(textureSampler,sampleCoord14)*computedWeight;
+computedWeight=KERNEL_WEIGHT15;
+blend+=texture(textureSampler,sampleCoord15)*computedWeight;
+computedWeight=KERNEL_WEIGHT16;
+blend+=texture(textureSampler,sampleCoord16)*computedWeight;
+computedWeight=KERNEL_WEIGHT17;
+blend+=texture(textureSampler,sampleCoord17)*computedWeight;
+computedWeight=KERNEL_WEIGHT18;
+blend+=texture(textureSampler,sampleCoord18)*computedWeight;
+computedWeight=KERNEL_WEIGHT19;
+blend+=texture(textureSampler,sampleCoord19)*computedWeight;
+computedWeight=KERNEL_WEIGHT20;
+blend+=texture(textureSampler,sampleCoord20)*computedWeight;
+computedWeight=KERNEL_WEIGHT21;
+blend+=texture(textureSampler,sampleCoord21)*computedWeight;
+computedWeight=KERNEL_WEIGHT22;
+blend+=texture(textureSampler,sampleCoord22)*computedWeight;
+computedWeight=KERNEL_WEIGHT23;
+blend+=texture(textureSampler,sampleCoord23)*computedWeight;
+computedWeight=KERNEL_WEIGHT24;
+blend+=texture(textureSampler,sampleCoord24)*computedWeight;
+computedWeight=KERNEL_WEIGHT25;
+blend+=texture(textureSampler,sampleCoord25)*computedWeight;
+computedWeight=KERNEL_WEIGHT26;
+blend+=texture(textureSampler,sampleCoord26)*computedWeight;
+computedWeight=KERNEL_WEIGHT27;
+blend+=texture(textureSampler,sampleCoord27)*computedWeight;
+computedWeight=KERNEL_WEIGHT28;
+blend+=texture(textureSampler,sampleCoord28)*computedWeight;
+computedWeight=KERNEL_WEIGHT29;
+blend+=texture(textureSampler,sampleCoord29)*computedWeight;
+computedWeight=KERNEL_WEIGHT30;
+blend+=texture(textureSampler,sampleCoord30)*computedWeight;
+computedWeight=KERNEL_DEP_WEIGHT0;
+blend+=texture(textureSampler,sampleCenter+delta*KERNEL_DEP_OFFSET0)*computedWeight;
+computedWeight=KERNEL_DEP_WEIGHT1;
+blend+=texture(textureSampler,sampleCenter+delta*KERNEL_DEP_OFFSET1)*computedWeight;
+glFragColor=blend;
+}
+
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 BJS - [20:37:01]: Error: Too many varyings
+ 
+e._ErrorEnabled @ babylon.js:16
+babylon.js:16 WebGL: INVALID_OPERATION: useProgram: program not valid
+e._setProgram @ babylon.js:16
+babylon.js:16 Uncaught TypeError: Cannot read properties of undefined (reading 'scale')
+    at e.setVector2 (babylon.js:16)
+    at e.setVector2 (babylon.js:16)
+    at t.e.apply (babylon.js:16)
+    at e.directRender (babylon.js:16)
+    at r.callback (babylon.js:16)
+    at e.notifyObservers (babylon.js:16)
+    at t.render (babylon.js:16)
+    at t._renderForCamera (babylon.js:16)
+    at t._processSubCameras (babylon.js:16)
+    at t.render (babylon.js:16)
+DevTools failed to load source map: Could not load content for https://unpkg.com/monaco-editor@0.20.0/dev/vs/language/typescript/lib/typescriptServices.js.map: Fetch through target failed: Target not supported; Fallback: HTTP error: status code 404, net::ERR_HTTP_RESPONSE_CODE_FAILURE
+DevTools failed to load source map: Could not load content for https://playground.babylonjs.com/libs/split.min.js.map: HTTP error: status code 404, net::ERR_HTTP_RESPONSE_CODE_FAILURE
